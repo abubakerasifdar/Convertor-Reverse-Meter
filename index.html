@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" media="screen and (min-width: 1028px)" href="style/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1028px)" href="style/desktopstyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="style/tabletstyle.css">
+    <link rel="stylesheet" media="screen and (max-width: 480px)" href="style/mobilestyle.css">
+    
+</head>
+
+<body>
+   <div id="root">
+     <div>
+        <h1>Convertor Reverse Meter</h1>
+        <p>Write a program that inputs a value and type of conversion. The program should then output the value after
+            conversion. The program should include the following conversions:
+            Make sure that program accpts only valid choices for type of conversion to perform.
+        </p>
+        <ol>
+            <li>1 inch = 2.54 centimeters</li>
+            <li>1 gallon = 3.785 liters</li>
+            <li>1 mile = 1.609 kilometers</li>
+            <li>1 pound = .4534 kilograms</li>
+        </ol>
+        <select id="convertor">
+            <optgroup label="Inch_Centimeter Convertor">
+                <option value="inch_to_centimeter">Inch to Centimeter</option>
+                <option value="centimeter_to_inch">Centimeter to Inch</option>
+            </optgroup>
+            <optgroup label="Gallon_Liter Convertor">
+                <option value="gallon_to_liter">Gallon to Liter</option>
+                <option value="liter_to_gallon">Liter to Gallon</option>
+            </optgroup>
+            <optgroup label="Mile_Kilometer Convertor">
+                <option value="mile_to_kilometers">Mile to Kilometer</option>
+                <option value="kilometers_to_mile">Kilometer to Mile</option>
+            </optgroup>
+            <optgroup label="Pound_Kilogram Convertor">
+                <option value="pound_to_kilogram">Pound to Kilogram</option>
+                <option value="kilogram_to_pound">Kilogram to Pound</option>
+            </optgroup>
+        </select>
+        <input type="number" id="input" placeholder="Please Entered Number">
+        <button onclick="myFunction()">Check</button>
+        <p id="output"></p>
+
+    </div>
+   </div>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
